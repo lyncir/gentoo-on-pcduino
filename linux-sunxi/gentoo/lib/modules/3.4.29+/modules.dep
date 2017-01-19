@@ -1,0 +1,146 @@
+kernel/fs/nfs_common/nfs_acl.ko:
+kernel/fs/reiserfs/reiserfs.ko:
+kernel/fs/coda/coda.ko:
+kernel/fs/hfsplus/hfsplus.ko:
+kernel/fs/hfs/hfs.ko:
+kernel/fs/nfsd/nfsd.ko: kernel/fs/nfs_common/nfs_acl.ko
+kernel/fs/ncpfs/ncpfs.ko:
+kernel/fs/ufs/ufs.ko:
+kernel/fs/romfs/romfs.ko:
+kernel/fs/xfs/xfs.ko:
+kernel/fs/nilfs2/nilfs2.ko:
+kernel/fs/ocfs2/ocfs2.ko: kernel/fs/ocfs2/ocfs2_stackglue.ko kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
+kernel/fs/ocfs2/ocfs2_stackglue.ko:
+kernel/fs/ocfs2/ocfs2_stack_o2cb.ko: kernel/fs/ocfs2/dlm/ocfs2_dlm.ko kernel/fs/ocfs2/ocfs2_stackglue.ko kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
+kernel/fs/ocfs2/dlmfs/ocfs2_dlmfs.ko: kernel/fs/ocfs2/ocfs2_stackglue.ko kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
+kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko:
+kernel/fs/ocfs2/dlm/ocfs2_dlm.ko: kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
+kernel/fs/btrfs/btrfs.ko:
+kernel/fs/gfs2/gfs2.ko:
+kernel/security/keys/encrypted-keys/encrypted-keys.ko:
+kernel/crypto/sha256_generic.ko:
+kernel/crypto/sha512_generic.ko:
+kernel/crypto/af_alg.ko:
+kernel/crypto/algif_hash.ko: kernel/crypto/af_alg.ko
+kernel/drivers/video/backlight/backlight.ko:
+kernel/drivers/video/sunxi/disp/disp_ump.ko: kernel/drivers/gpu/mali/ump/ump.ko
+kernel/drivers/video/sysfillrect.ko:
+kernel/drivers/video/syscopyarea.ko:
+kernel/drivers/video/sysimgblt.ko:
+kernel/drivers/video/fb_sys_fops.ko:
+kernel/drivers/gpu/drm/drm.ko:
+kernel/drivers/gpu/drm/mali/mali_drm.ko: kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/mali/ump/ump.ko:
+kernel/drivers/gpu/mali/mali/mali.ko: kernel/drivers/gpu/mali/ump/ump.ko
+kernel/drivers/block/nbd.ko:
+kernel/drivers/nfc/pn544.ko: kernel/lib/crc-ccitt.ko
+kernel/drivers/nfc/pn533.ko: kernel/net/nfc/nfc.ko
+kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/net/wireless/rtl8192cu/8192cu.ko:
+kernel/drivers/net/wireless/rtxx7x/rt5370sta.ko:
+kernel/drivers/net/wireless/rtl8188eu/8188eu.ko: kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_async.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/ppp/bsd_comp.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_deflate.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_mppe.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_synctty.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppox.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppoe.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppolac.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppopns.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/slip/slhc.ko:
+kernel/drivers/usb/class/usblp.ko:
+kernel/drivers/usb/class/cdc-wdm.ko:
+kernel/drivers/usb/misc/adutux.ko:
+kernel/drivers/usb/misc/appledisplay.ko: kernel/drivers/video/backlight/backlight.ko
+kernel/drivers/usb/misc/cypress_cy7c63.ko:
+kernel/drivers/usb/misc/cytherm.ko:
+kernel/drivers/usb/misc/emi26.ko:
+kernel/drivers/usb/misc/emi62.ko:
+kernel/drivers/usb/misc/ftdi-elan.ko:
+kernel/drivers/usb/misc/idmouse.ko:
+kernel/drivers/usb/misc/iowarrior.ko:
+kernel/drivers/usb/misc/usblcd.ko:
+kernel/drivers/usb/misc/ldusb.ko:
+kernel/drivers/usb/misc/usbled.ko:
+kernel/drivers/usb/misc/legousbtower.ko:
+kernel/drivers/usb/misc/rio500.ko:
+kernel/drivers/usb/misc/usbsevseg.ko:
+kernel/drivers/usb/misc/yurex.ko:
+kernel/drivers/usb/misc/sisusbvga/sisusbvga.ko:
+kernel/drivers/usb/image/mdc800.ko:
+kernel/drivers/usb/image/microtek.ko:
+kernel/drivers/usb/gadget/udc-core.ko:
+kernel/drivers/usb/gadget/g_ether.ko: kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/sun4i_usb/sw_usb_udc.ko: kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/media/video/vivi.ko:
+kernel/drivers/bluetooth/hci_vhci.ko:
+kernel/drivers/bluetooth/bcm203x.ko:
+kernel/drivers/bluetooth/bpa10x.ko:
+kernel/drivers/bluetooth/bfusb.ko:
+kernel/drivers/bluetooth/ath3k.ko:
+kernel/drivers/bluetooth/btmrvl.ko:
+kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko
+kernel/drivers/hid/hid-a4tech.ko:
+kernel/drivers/hid/hid-axff.ko:
+kernel/drivers/hid/hid-apple.ko:
+kernel/drivers/hid/hid-belkin.ko:
+kernel/drivers/hid/hid-cherry.ko:
+kernel/drivers/hid/hid-chicony.ko:
+kernel/drivers/hid/hid-cypress.ko:
+kernel/drivers/hid/hid-dr.ko:
+kernel/drivers/hid/hid-emsff.ko:
+kernel/drivers/hid/hid-elecom.ko:
+kernel/drivers/hid/hid-ezkey.ko:
+kernel/drivers/hid/hid-holtekff.ko:
+kernel/drivers/hid/hid-kensington.ko:
+kernel/drivers/hid/hid-lcpower.ko:
+kernel/drivers/hid/hid-logitech.ko:
+kernel/drivers/hid/hid-logitech-dj.ko:
+kernel/drivers/hid/hid-magicmouse.ko:
+kernel/drivers/hid/hid-microsoft.ko:
+kernel/drivers/hid/hid-monterey.ko:
+kernel/drivers/hid/hid-multitouch.ko:
+kernel/drivers/hid/hid-ntrig.ko:
+kernel/drivers/hid/hid-ortek.ko:
+kernel/drivers/hid/hid-prodikeys.ko:
+kernel/drivers/hid/hid-pl.ko:
+kernel/drivers/hid/hid-petalynx.ko:
+kernel/drivers/hid/hid-picolcd.ko: kernel/drivers/video/syscopyarea.ko kernel/drivers/video/sysfillrect.ko kernel/drivers/video/sysimgblt.ko kernel/drivers/video/fb_sys_fops.ko kernel/drivers/video/backlight/backlight.ko
+kernel/drivers/hid/hid-primax.ko:
+kernel/drivers/hid/hid-roccat.ko:
+kernel/drivers/hid/hid-roccat-common.ko:
+kernel/drivers/hid/hid-roccat-arvo.ko: kernel/drivers/hid/hid-roccat-common.ko kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-roccat-isku.ko: kernel/drivers/hid/hid-roccat-common.ko kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-roccat-kone.ko: kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-roccat-koneplus.ko: kernel/drivers/hid/hid-roccat-common.ko kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-roccat-kovaplus.ko: kernel/drivers/hid/hid-roccat-common.ko kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-roccat-pyra.ko: kernel/drivers/hid/hid-roccat-common.ko kernel/drivers/hid/hid-roccat.ko
+kernel/drivers/hid/hid-saitek.ko:
+kernel/drivers/hid/hid-samsung.ko:
+kernel/drivers/hid/hid-sjoy.ko:
+kernel/drivers/hid/hid-sony.ko:
+kernel/drivers/hid/hid-speedlink.ko:
+kernel/drivers/hid/hid-sunplus.ko:
+kernel/drivers/hid/hid-gaff.ko:
+kernel/drivers/hid/hid-tmff.ko:
+kernel/drivers/hid/hid-tivo.ko:
+kernel/drivers/hid/hid-topseed.ko:
+kernel/drivers/hid/hid-twinhan.ko:
+kernel/drivers/hid/hid-zpff.ko:
+kernel/drivers/hid/hid-zydacron.ko:
+kernel/drivers/hid/hid-wacom.ko:
+kernel/drivers/hid/hid-wiimote.ko:
+kernel/sound/usb/misc/snd-ua101.ko:
+kernel/sound/usb/caiaq/snd-usb-caiaq.ko:
+kernel/sound/usb/6fire/snd-usb-6fire.ko:
+kernel/net/ipv4/inet_diag.ko:
+kernel/net/ipv4/tcp_diag.ko: kernel/net/ipv4/inet_diag.ko
+kernel/net/ipv4/udp_diag.ko: kernel/net/ipv4/inet_diag.ko
+kernel/net/wireless/cfg80211.ko:
+kernel/net/rfkill/rfkill-regulator.ko:
+kernel/net/rfkill/rfkill-gpio.ko:
+kernel/net/nfc/nfc.ko:
+kernel/net/nfc/nci/nci.ko: kernel/net/nfc/nfc.ko
+kernel/lib/crc-ccitt.ko:
